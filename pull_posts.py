@@ -9,7 +9,7 @@ from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 from datetime import datetime
 
-API_KEY = "REDACTED_ROTATE_THIS_KEY"
+API_KEY = os.environ.get("MOLTBOOK_API_KEY", "")
 BASE = "https://www.moltbook.com/api/v1"
 OUTPUT = os.path.join(os.path.dirname(__file__), "raw_posts.jsonl")
 STATE_FILE = os.path.join(os.path.dirname(__file__), "pull_state.json")
