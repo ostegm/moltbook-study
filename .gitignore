@@ -2,8 +2,3 @@
 __pycache__/
 *.pyc
 .venv/
-
-# Large data files (too big for git)
-raw_posts.jsonl
-classified_posts.jsonl
-agent_roster.json
